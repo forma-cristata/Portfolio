@@ -1,6 +1,5 @@
 arrowParens: avoid
 bracketSpacing: true
-jsxBracketSameLine: false
 printWidth: 120
 proseWrap: preserve
 requirePragma: false

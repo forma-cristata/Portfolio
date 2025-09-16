@@ -112,15 +112,18 @@ The project includes comprehensive development tooling and configuration:
   - Working directory configuration for monorepo support
 - **Prettier**: Consistent code formatting with YAML configuration (`.prettierrc.yaml`)
   - 120 character line width for readability
-  - 4-space tab width for consistent indentation
-  - Single quotes and trailing commas for cleaner diffs
-  - Automated formatting on save
+  - Arrow function parentheses avoided for single parameters
+  - Bracket spacing enabled for object literals
+  - Modernized configuration removing deprecated JSX options
+  - Automated formatting on save with explicit VS Code integration
 
 #### IDE Configuration
 - **VS Code Settings**: Optimized workspace configuration (`.vscode/settings.json`)
   - ESLint integration with automatic fixes on save
-  - Format on save for TypeScript files
+  - Explicit Prettier formatter configuration for all supported file types (TypeScript, HTML, SCSS, JSON)
+  - Format on save enabled for consistent code styling
   - Import organization and trailing whitespace cleanup
+  - Auto-save on focus change for improved workflow efficiency
   - Consistent editor behavior across team members
   - Auto-detection of formatters and linters
 
@@ -130,6 +133,8 @@ The project includes comprehensive development tooling and configuration:
   - Application-specific imports follow (`./app/app.component`, `./app/app.config`)
   - Alphabetical ordering within groups for predictability
 - **Code Formatting**: Consistent spacing, indentation, and line endings across all files
+  - Tab-based indentation for better accessibility and developer preference accommodation
+  - Unified formatting applied across client and server codebases
 - **Type Safety**: Comprehensive TypeScript configuration with strict type checking
 - **File Structure**: Clear separation of concerns with dedicated client/server/shared directories
 
