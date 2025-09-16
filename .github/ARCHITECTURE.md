@@ -70,6 +70,69 @@ src/
 - Node.js (v18 or higher)
 - npm (v9 or higher)
 
+## Development Dependencies & Tooling
+
+The project includes a comprehensive set of development tools for code quality, formatting, and developer experience:
+
+### Core Development Dependencies
+- **Angular CLI** (`@angular/cli`): Command-line interface for Angular development
+- **Angular Compiler CLI** (`@angular/compiler-cli`): Ahead-of-time (AOT) compilation support
+- **TypeScript** (`typescript`): Primary programming language with type safety
+
+### Code Quality & Linting
+- **ESLint** (`eslint`): JavaScript and TypeScript linting
+  - `@angular-eslint/eslint-plugin`: Angular-specific ESLint rules
+  - `@angular-eslint/template-parser`: Template parsing for Angular components
+  - `@typescript-eslint/eslint-plugin`: TypeScript-specific ESLint rules
+  - `@typescript-eslint/parser`: TypeScript parser for ESLint
+- **Prettier**: Code formatting (configured via `.prettierrc.yaml`)
+
+### Testing Framework
+- **Jasmine** (`jasmine-core`): Testing framework for unit tests
+- **Karma** (`karma`): Test runner with browser automation
+  - `karma-chrome-launcher`: Chrome browser integration
+  - `karma-coverage`: Code coverage reporting
+  - `karma-jasmine`: Jasmine framework adapter
+  - `karma-jasmine-html-reporter`: HTML test result reporting
+
+### Type Definitions
+- `@types/express`: TypeScript definitions for Express.js
+- `@types/jasmine`: TypeScript definitions for Jasmine
+- `@types/node`: TypeScript definitions for Node.js
+
+### Development Configuration
+
+The project includes comprehensive development tooling and configuration:
+
+#### Code Quality & Formatting
+- **ESLint**: Angular-specific linting rules with TypeScript support (`.eslintrc`)
+  - Angular-specific rules via `@angular-eslint/eslint-plugin`
+  - TypeScript ESLint integration via `@typescript-eslint/eslint-plugin` and `@typescript-eslint/parser`
+  - Automatic fixes and error detection on save
+  - Working directory configuration for monorepo support
+- **Prettier**: Consistent code formatting with YAML configuration (`.prettierrc.yaml`)
+  - 120 character line width for readability
+  - 4-space tab width for consistent indentation
+  - Single quotes and trailing commas for cleaner diffs
+  - Automated formatting on save
+
+#### IDE Configuration
+- **VS Code Settings**: Optimized workspace configuration (`.vscode/settings.json`)
+  - ESLint integration with automatic fixes on save
+  - Format on save for TypeScript files
+  - Import organization and trailing whitespace cleanup
+  - Consistent editor behavior across team members
+  - Auto-detection of formatters and linters
+
+#### Code Organization Standards
+- **Import Ordering**: Automated import organization with consistent grouping:
+  - Angular core imports first (`@angular/platform-browser`)
+  - Application-specific imports follow (`./app/app.component`, `./app/app.config`)
+  - Alphabetical ordering within groups for predictability
+- **Code Formatting**: Consistent spacing, indentation, and line endings across all files
+- **Type Safety**: Comprehensive TypeScript configuration with strict type checking
+- **File Structure**: Clear separation of concerns with dedicated client/server/shared directories
+
 ### Running the Application
 
 1.  **Install Dependencies**

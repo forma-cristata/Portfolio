@@ -1,24 +1,24 @@
 /**
  * EXPRESS SERVER SETUP - Node.js Server with Angular Universal
- * 
+ *
  * This file configures and sets up the Express.js server that serves the Angular
  * application with server-side rendering (SSR) capabilities. It handles both static
  * file serving and dynamic server-side rendering of Angular components.
- * 
+ *
  * Purpose:
  * - Configure Express.js server for Angular Universal SSR
  * - Serve static assets (JS, CSS, images) from the browser build
  * - Handle server-side rendering for all application routes
  * - Provide API endpoints for backend functionality
  * - Integrate with Angular SSR engine for optimal performance
- * 
+ *
  * Features:
  * - Static file serving with caching optimization
  * - Angular Universal integration for SSR
  * - API endpoint support for REST services
  * - Production-ready server configuration
  * - Request handling with proper error management
- * 
+ *
  * Used by: Node.js runtime, deployed as the main server application
  */
 
