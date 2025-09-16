@@ -1,0 +1,51 @@
+/**
+ * TYPESCRIPT CONFIGURATION - Main TypeScript Compiler Settings
+ * 
+ * This file configures the TypeScript compiler for the entire Angular application,
+ * defining compilation options, target environments, and module resolution strategies.
+ * It serves as the base configuration for both client and server TypeScript compilation.
+ * 
+ * Purpose:
+ * - Configure TypeScript compiler options for the project
+ * - Set up module resolution and import/export handling
+ * - Define strict type checking and code quality rules
+ * - Configure build output directory and compilation targets
+ * - Enable Angular-specific compiler features and optimizations
+ * 
+ * Features:
+ * - Strict TypeScript configuration for better code quality
+ * - Modern ES2022 target with bundler module resolution
+ * - Angular decorator support and experimental features
+ * - Isolated modules for better build performance
+ * - ESM interoperability and import helpers
+ * 
+ * Used by: Angular CLI, TypeScript compiler, IDE tooling
+ */
+
+/* To learn more about Typescript configuration file: https://www.typescriptlang.org/docs/handbook/tsconfig-json.html. */
+/* To learn more about Angular compiler options: https://angular.dev/reference/configs/angular-compiler-options. */
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "outDir": "./dist/out-tsc",
+    "strict": true,
+    "noImplicitOverride": true,
+    "noPropertyAccessFromIndexSignature": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "skipLibCheck": true,
+    "isolatedModules": true,
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "moduleResolution": "bundler",
+    "importHelpers": true,
+    "target": "ES2022",
+    "module": "ES2022"
+  },
+  "angularCompilerOptions": {
+    "enableI18nLegacyMessageIdFormat": false,
+    "strictInjectionParameters": true,
+    "strictInputAccessModifiers": true,
+    "strictTemplates": true
+  }
+}

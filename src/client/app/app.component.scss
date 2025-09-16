@@ -1,0 +1,25 @@
+/**
+ * ROOT APP COMPONENT STYLES - Main Application Component Styling
+ * 
+ * This file contains the styles specific to the root AppComponent. It defines
+ * the visual appearance, layout, and responsive behavior of the main application
+ * container and any component-specific styling that doesn't belong in global styles.
+ * 
+ * Purpose:
+ * - Style the root application component structure
+ * - Define component-specific layout and positioning
+ * - Implement responsive design for the main container
+ * - Provide scoped styling that doesn't affect other components
+ * - Set up CSS custom properties for component theming
+ * 
+ * Features:
+ * - SCSS preprocessing for advanced styling capabilities
+ * - Component-scoped styles (Angular ViewEncapsulation)
+ * - Responsive design patterns and breakpoints
+ * - CSS custom properties integration
+ * - Host element styling capabilities
+ * 
+ * Used by: AppComponent template, Angular component styling system
+ */
+
+// Component-specific styles go here
