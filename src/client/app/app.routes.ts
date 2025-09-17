@@ -23,5 +23,10 @@
  */
 
 import { Routes } from '@angular/router';
+import { HomeComponent } from '../screens/home/home.component';
+import { SpinnersComponent } from '../screens/spinners/spinners.component';
 
-export const routes: Routes = [];
+export const routes: Routes = [
+	{ path: '', component: HomeComponent },
+	{ path: 'spinners', component: SpinnersComponent },
+];

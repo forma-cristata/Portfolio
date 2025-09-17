@@ -1,13 +1,6 @@
-# Portfolio Application
-
-This folder contains supplementary information about the project's architecture and technical design.
-
-- **[ARCHITECTURE.md](./ARCHITECTURE.md)**: Provides a detailed technical overview of the system architecture, including the client/server separation, SSR flow, project structure, and deployment considerations.
-- **[COPILOT_INSTRUCTIONS.md](./COPILOT_INSTRUCTIONS.md)**: Contains instructions for GitHub Copilot's DOCS workflow for automated documentation updates.
-
 # Portfolio - Angular Universal Application
 
-A high-performance, server-side rendered portfolio application built with Angular Universal, featuring a clean architectural separation between client and server code for enhanced maintainability and scalability.
+Server-side rendered portfolio application built with Angular Universal, featuring clean client/server separation and comprehensive tooling for maintainability and performance.
 
 ## Technology Stack
 
@@ -15,54 +8,70 @@ A high-performance, server-side rendered portfolio application built with Angula
 |---------------|-----------------------------------------|
 | **Frontend**  | Angular 19, TypeScript, SCSS, RxJS      |
 | **Backend**   | Node.js, Express.js, Angular Universal  |
-| **Development** | Angular CLI, Webpack, ESLint, Prettier  |
-| **Testing**   | Jasmine, Karma                          |
+| **Development** | Angular CLI, ESLint, Prettier, Karma   |
 
-## Architecture Overview
+## Architecture
 
-The application follows a client/server separation pattern, providing clear separation of concerns between frontend and backend logic, type-safe shared interfaces for consistent data contracts, and an optimized build process for both client and server bundles.
+### Core Principles
+- **Separation of Concerns**: Clear boundaries between client, server, and shared code
+- **Type Safety**: Comprehensive TypeScript usage across all layers
+- **Performance-First**: Optimized for SSR and client-side performance
 
-## Project Structure
-
+### Project Structure
 ```
 src/
-├── client/          # Client-side Angular application
-│   ├── main.ts         # Client bootstrap
-│   ├── index.html      # HTML template
-│   └── app/            # Angular components
-├── server/          # Server-side rendering
-│   ├── main.server.ts  # SSR bootstrap
-│   └── server.ts       # Express server
-└── shared/          # Shared utilities
-    └── types.ts        # Common types
+├── client/                    # Client-side Angular application
+│   ├── app/                   # Core application shell with routing
+│   │   ├── app.component.*    # Root component with navigation
+│   │   ├── app.config.ts      # Application configuration
+│   │   └── app.routes.ts      # Route definitions
+│   └── screens/               # Feature screen components
+│       ├── home/              # Portfolio landing page
+│       └── spinners/          # Loading animations showcase
+├── server/                    # Server-side rendering
+│   ├── main.server.ts         # SSR bootstrap
+│   └── server.ts              # Express server setup
+└── shared/                    # Shared utilities and types
+    └── types.ts               # Common TypeScript interfaces
 ```
 
-## Quick Start
+### Routing
+- **Root Route** (`/`): HomeComponent with portfolio overview
+- **Spinners Route** (`/spinners`): Interactive loading demonstrations
+- **Navigation**: Integrated router links for seamless transitions
+
+## Development Setup
 
 ### Prerequisites
-- Node.js (v18 or higher)
-- npm (v9 or higher)
+- Node.js (v18+)
+- npm (v9+)
 
-### Setup
+### Quick Start
+```bash
+git clone <repository-url>
+cd portfolio
+npm install
+npm start
+```
 
-1. **Clone and Install**
-   ```bash
-   git clone <repository-url>
-   cd portfolio
-   npm install
-   ```
+Application available at `http://localhost:4200/`
 
-2. **Run Development Server**
-   ```bash
-   npm start
-   ```
-   The application will be available at `http://localhost:4200/`.
+### Scripts
+| Command             | Description                           |
+|---------------------|---------------------------------------|
+| `npm start`         | Development server                    |
+| `npm run build`     | Production build                      |
+| `npm test`          | Unit tests                            |
+| `npm run serve:ssr` | Production SSR server                 |
 
-## Available Scripts
+## Development Tools
 
-| Script                  | Description                               |
-|-------------------------|-------------------------------------------|
-| `npm start`             | Start client-side development server.     |
-| `npm run build`         | Build the application for production.     |
-| `npm test`              | Run unit tests with Karma and Jasmine.    |
-| `npm run serve:ssr`     | Serve the production build with SSR.      |
+### Code Quality
+- **ESLint**: Angular-specific linting with TypeScript support
+- **Prettier**: Consistent formatting with 120-character lines
+- **VS Code Integration**: Auto-formatting and linting on save
+
+### Testing
+- **Jasmine**: Unit testing framework
+- **Karma**: Test runner with Chrome integration
+- **Coverage**: Code coverage reporting

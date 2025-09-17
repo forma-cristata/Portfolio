@@ -237,6 +237,7 @@
 			</svg>
 			<h1>Hello, {{ title }}</h1>
 			<p>Congratulations! Your app is running. 🎉</p>
+			<a routerLink="/spinners">Loading Icons & Spinners</a>
 		</div>
 		<div class="divider" role="separator" aria-label="Divider"></div>
 		<div class="right-side">
@@ -321,8 +322,11 @@
 <!-- * * * * * * * * * * * The content above * * * * * * * * * * * * -->
 <!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * * -->
 <!-- * * * * * * * * * * and can be replaced.  * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<!-- * * * * * * * * * * End of Placeholder  * * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- Navigation -->
+<nav style="padding: 20px; background: #f0f0f0; margin-bottom: 20px">
+	<a routerLink="/" style="margin-right: 20px; text-decoration: none; color: #007bff">Home</a>
+	<a routerLink="/spinners" style="margin-right: 20px; text-decoration: none; color: #007bff">Spinners</a>
+	<!-- Add more navigation links here as you create more components -->
+</nav>
 
 <router-outlet />
