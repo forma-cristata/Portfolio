@@ -1,24 +1,24 @@
 /**
  * GLOBAL CLIENT STYLES - Application-Wide Styling
- * 
+ *
  * This file contains global styles that apply to the entire client-side Angular
  * application. It serves as the main stylesheet for shared styling, CSS resets,
  * utility classes, and common design patterns used throughout the application.
- * 
+ *
  * Purpose:
  * - Define global CSS styles and resets
  * - Import and organize third-party stylesheets
  * - Establish design system variables and mixins
  * - Provide utility classes for common styling patterns
  * - Set up responsive design breakpoints and grid systems
- * 
+ *
  * Features:
  * - SCSS preprocessing for advanced styling features
  * - Global component styling and overrides
  * - CSS custom properties for theming
  * - Responsive design utilities
  * - Accessibility-focused styling
- * 
+ *
  * Used by: Angular build process, loaded globally across all components
  */
 

@@ -1,43 +1,35 @@
 /**
  * APPLICATION TYPESCRIPT CONFIGURATION - Build-Specific TS Settings
- * 
+ *
  * This file extends the base TypeScript configuration specifically for building
  * the Angular application. It includes application-specific entry points and
  * compilation settings optimized for production builds and development.
- * 
+ *
  * Purpose:
  * - Configure TypeScript compilation for application build process
  * - Define entry points for client and server builds
  * - Set up build-specific output directories and type definitions
  * - Include necessary files for both SSR and client-side builds
  * - Optimize compilation settings for application deployment
- * 
+ *
  * Features:
  * - Extends base tsconfig.json configuration
  * - Node.js type definitions for server-side code
  * - Specific entry points for client and server bootstrapping
  * - Build-optimized output directory structure
  * - Include patterns for source file compilation
- * 
+ *
  * Used by: Angular CLI build process, ng build command
  */
 
 /* To learn more about Typescript configuration file: https://www.typescriptlang.org/docs/handbook/tsconfig-json.html. */
 /* To learn more about Angular compiler options: https://angular.dev/reference/configs/angular-compiler-options. */
 {
-  "extends": "./tsconfig.json",
-  "compilerOptions": {
-    "outDir": "./out-tsc/app",
-    "types": [
-      "node"
-    ]
-  },
-  "files": [
-    "src/client/main.ts",
-    "src/server/main.server.ts",
-    "src/server/server.ts"
-  ],
-  "include": [
-    "src/**/*.d.ts"
-  ]
+	"extends": "./tsconfig.json",
+	"compilerOptions": {
+		"outDir": "./out-tsc/app",
+		"types": ["node"]
+	},
+	"files": ["src/client/main.ts", "src/server/main.server.ts", "src/server/server.ts"],
+	"include": ["src/**/*.d.ts"]
 }

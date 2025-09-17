@@ -1,39 +1,34 @@
 /**
  * TESTING TYPESCRIPT CONFIGURATION - Test-Specific TS Settings
- * 
+ *
  * This file extends the base TypeScript configuration specifically for running
  * unit tests and specs. It includes testing framework type definitions and
  * optimizes compilation settings for the testing environment.
- * 
+ *
  * Purpose:
  * - Configure TypeScript compilation for test execution
  * - Include testing framework type definitions (Jasmine)
  * - Set up test-specific output directories and file patterns
  * - Define include patterns for test files and type definitions
  * - Optimize compilation settings for testing environment
- * 
+ *
  * Features:
  * - Extends base tsconfig.json configuration
  * - Jasmine testing framework type definitions
  * - Specific output directory for test compilation
  * - Include patterns for .spec.ts and .d.ts files
  * - Testing-optimized TypeScript settings
- * 
+ *
  * Used by: Angular CLI test command, Karma test runner, ng test
  */
 
 /* To learn more about Typescript configuration file: https://www.typescriptlang.org/docs/handbook/tsconfig-json.html. */
 /* To learn more about Angular compiler options: https://angular.dev/reference/configs/angular-compiler-options. */
 {
-  "extends": "./tsconfig.json",
-  "compilerOptions": {
-    "outDir": "./out-tsc/spec",
-    "types": [
-      "jasmine"
-    ]
-  },
-  "include": [
-    "src/**/*.spec.ts",
-    "src/**/*.d.ts"
-  ]
+	"extends": "./tsconfig.json",
+	"compilerOptions": {
+		"outDir": "./out-tsc/spec",
+		"types": ["jasmine"]
+	},
+	"include": ["src/**/*.spec.ts", "src/**/*.d.ts"]
 }
