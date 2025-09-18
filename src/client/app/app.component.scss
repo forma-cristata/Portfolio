@@ -21,18 +21,23 @@
  *
  * Used by: AppComponent template, Angular component styling system
  */
+
+@use '../../shared/keyframe-animations/pulse';
+
 .navbar {
 	padding: 20px;
 	background: #000000;
 	margin-bottom: 20px;
+	font-family: 'run-reg';
+	font-size: 2rem;
 }
 
 .router-link {
 	margin-right: 20px;
 	text-decoration: none;
-	color: #f0f0f0;
+	color: #b479a4;
 
 	&:hover {
-		color: white;
+		animation: 2s infinite pulse;
 	}
 }

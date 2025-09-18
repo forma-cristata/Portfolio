@@ -32,7 +32,11 @@ src/
 │   ├── main.server.ts         # SSR bootstrap
 │   └── server.ts              # Express server setup
 └── shared/                    # Shared utilities and types
-    └── types.ts               # Common TypeScript interfaces
+    ├── types.ts               # Common TypeScript interfaces
+    ├── assets/                # Static assets for production
+    │   └── fonts/             # Custom font files (RuntimeRegular.otf)
+    └── keyframe-animations/   # Reusable CSS animations
+        └── pulse.scss         # Color pulsing animation
 ```
 
 ### Routing
@@ -75,3 +79,22 @@ Application available at `http://localhost:4200/`
 - **Jasmine**: Unit testing framework
 - **Karma**: Test runner with Chrome integration
 - **Coverage**: Code coverage reporting
+
+## Asset Management
+
+### Fonts
+- **RuntimeRegular.otf**: Custom font integrated via @font-face declarations
+- **Font Family**: Accessible as 'run-reg' throughout application
+- **Asset Pipeline**: Centralized in `src/shared/assets/` with Angular build integration
+
+### Animations
+- **Pulse Animation**: Color transition keyframes for interactive elements
+- **Implementation**: SCSS modules with component-level imports
+- **Usage**: Applied to navigation links on hover states
+
+## UI/UX Features
+
+### Navigation
+- **Custom Typography**: RuntimeRegular font for enhanced branding
+- **Interactive States**: Pulsing color animations on hover
+- **Color Scheme**: Purple gradient (#b479a4 to #f0c7e5) for visual hierarchy

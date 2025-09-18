@@ -26,7 +26,8 @@
 						"assets": [
 							{
 								"glob": "**/*",
-								"input": "public"
+								"input": "src/shared/assets",
+								"output": "assets"
 							}
 						],
 						"styles": ["src/client/styles.scss"],
@@ -85,7 +86,8 @@
 						"assets": [
 							{
 								"glob": "**/*",
-								"input": "public"
+								"input": "src/shared/assets",
+								"output": "assets"
 							}
 						],
 						"styles": ["src/client/styles.scss"],
