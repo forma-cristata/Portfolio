@@ -34,4 +34,4 @@ When you receive the exact prompt text: **"COMMIT"**
 1. Check for unstaged changes using git status
 2. Use git diff <filePath> to analyze the modified files and their modifications
 3. Generate a concise, descriptive commit message, (<commit-message>), that accurately reflects the changes made in 10 words or fewer.
-4. Run "git commit -am '<commit-message>'; git push" to commit and push the changes.
+4. Run "git add .; git commit -m '<commit-message>'; git push" to commit and push the changes.
