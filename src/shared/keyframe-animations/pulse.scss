@@ -1,11 +1,11 @@
 @keyframes pulse {
 	0% {
-		color: #b479a4;
+		color: light-dark(#000000, #b479a4);
 	}
 	50% {
-		color: #f0c7e5;
+		color: light-dark(#646464, #f0c7e5);
 	}
 	100% {
-		color: #b479a4;
+		color: light-dark(#000000, #b479a4);
 	}
 }

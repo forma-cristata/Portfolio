@@ -1,6 +1,24 @@
-# Portfolio - Angular Universal Application
+# Portfolio - Work in Progress - I honestly would not look at this just yet.
 
 Server-side rendered portfolio application built with Angular Universal, featuring clean client/server separation and comprehensive tooling for maintainability and performance.
+
+## Recent Updates
+
+### Dark/Light Mode Support
+Added system-based color scheme detection with `light-dark()` CSS function support:
+- Configured `:root { color-scheme: light dark }` for automatic theme switching
+- Updated navbar background to adapt: `light-dark(#f0f0f0, #000000)`
+- Modified navigation link colors for theme compatibility
+- Enhanced pulse animation with theme-aware color transitions
+
+### Spinners Component Implementation
+Created animated spinner component with advanced SCSS architecture:
+- Complex orbital animation system with 13 rotating elements per layer
+- SCSS mixin-based keyframe generation for maintainable animations
+- Configurable timing, positioning, and color variables
+- Dual-layer quark system (white outer, black inner circles)
+- Mathematical positioning using diagonal offset calculations
+- Added `NgFor` directive import for template iteration
 
 ## Technology Stack
 

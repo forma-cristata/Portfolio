@@ -26,7 +26,7 @@
 
 .navbar {
 	padding: 20px;
-	background: #000000;
+	background: light-dark(#f0f0f0, #000000);
 	margin-bottom: 20px;
 	font-family: 'run-reg';
 	font-size: 2rem;
@@ -35,7 +35,7 @@
 .router-link {
 	margin-right: 20px;
 	text-decoration: none;
-	color: #b479a4;
+	color: light-dark(#000000, #b479a4);
 
 	&:hover {
 		animation: 2s infinite pulse;
