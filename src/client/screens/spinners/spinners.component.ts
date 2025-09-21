@@ -1,9 +1,9 @@
-import { NgFor } from '@angular/common';
 import { Component } from '@angular/core';
+import { WigglyBoiComponent } from './wiggly-boi/wiggly-boi.component';
 
 @Component({
 	selector: 'app-spinners',
-	imports: [NgFor],
+	imports: [WigglyBoiComponent],
 	templateUrl: './spinners.component.html',
 	styleUrl: './spinners.component.scss',
 })
