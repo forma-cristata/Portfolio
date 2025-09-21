@@ -23,10 +23,10 @@
  */
 
 import { Routes } from '@angular/router';
-import { HomeComponent } from '../screens/home/home.component';
+import { ContactMeComponent } from '../screens/contact-me/contact-me.component';
 import { SpinnersComponent } from '../screens/spinners/spinners.component';
 
 export const routes: Routes = [
-	{ path: '', component: HomeComponent },
+	{ path: '', component: ContactMeComponent },
 	{ path: 'spinners', component: SpinnersComponent },
 ];

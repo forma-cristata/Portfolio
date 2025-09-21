@@ -44,7 +44,7 @@ src/
 │   │   ├── app.config.ts      # Application configuration
 │   │   └── app.routes.ts      # Route definitions
 │   └── screens/               # Feature screen components
-│       ├── home/              # Portfolio landing page
+│       ├── contact-me/        # Contact information and communication
 │       └── spinners/          # Loading animations showcase
 ├── server/                    # Server-side rendering
 │   ├── main.server.ts         # SSR bootstrap
@@ -58,7 +58,7 @@ src/
 ```
 
 ### Routing
-- **Root Route** (`/`): HomeComponent with portfolio overview
+- **Root Route** (`/`): ContactMeComponent for contact information and communication
 - **Spinners Route** (`/spinners`): Interactive loading demonstrations
 - **Navigation**: Integrated router links for seamless transitions
 
