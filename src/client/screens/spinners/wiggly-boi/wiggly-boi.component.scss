@@ -1,3 +1,5 @@
+@use 'sass:list';
+
 // SCSS Variables - Size and dimension
 $squareSide: 50vh;
 $quark1: 3rem;
@@ -121,33 +123,33 @@ $spinner-colors: (
 @mixin spinner-path-keyframes($name, $positions, $colors, $position-step: 12.5%, $color-step: 6.25%) {
 	@keyframes #{$name} {
 		// Generate position keyframes
-		@for $i from 0 through (length($positions) - 1) {
+		@for $i from 0 through (list.length($positions) - 1) {
 			$percent: $i * $position-step;
-			$position: nth($positions, $i + 1);
+			$position: list.nth($positions, $i + 1);
 
 			#{$percent} {
-				top: nth($position, 1);
-				left: nth($position, 2);
+				top: list.nth($position, 1);
+				left: list.nth($position, 2);
 				@if $i == 0 {
-					border: 2px nth($colors, 1) solid;
+					border: 2px list.nth($colors, 1) solid;
 				}
 			}
 		}
 
 		// Generate color keyframes
-		@for $i from 1 through (length($colors) - 1) {
+		@for $i from 1 through (list.length($colors) - 1) {
 			$percent: $i * $color-step;
 			#{$percent} {
-				border: 2px nth($colors, $i + 1) solid;
+				border: 2px list.nth($colors, $i + 1) solid;
 			}
 		}
 
 		// Final state (100%)
 		100% {
-			$first-position: nth($positions, 1);
-			top: nth($first-position, 1);
-			left: nth($first-position, 2);
-			border: 2px nth($colors, 1) solid;
+			$first-position: list.nth($positions, 1);
+			top: list.nth($first-position, 1);
+			left: list.nth($first-position, 2);
+			border: 2px list.nth($colors, 1) solid;
 		}
 	}
 }
