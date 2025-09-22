@@ -24,9 +24,13 @@
 
 import { Routes } from '@angular/router';
 import { ContactMeComponent } from '../screens/contact-me/contact-me.component';
+import { LuminovaComponent } from '../screens/luminova/luminova.component';
+import { SHAuthComponent } from '../screens/shauth/shauth.component';
 import { SpinnersComponent } from '../screens/spinners/spinners.component';
 
 export const routes: Routes = [
 	{ path: '', component: ContactMeComponent },
+	{ path: 'luminova', component: LuminovaComponent },
+	{ path: 'shauth', component: SHAuthComponent },
 	{ path: 'spinners', component: SpinnersComponent },
 ];
